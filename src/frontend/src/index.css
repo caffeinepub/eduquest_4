@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 1rem;
+    /* EduQuest color palette (OKLCH L C H) */
+    --background: 0.964 0.025 220;
+    --foreground: 0.25 0.015 250;
+    --card: 1 0 0;
+    --card-foreground: 0.25 0.015 250;
+    --popover: 1 0 0;
+    --popover-foreground: 0.25 0.015 250;
+    --primary: 0.67 0.115 214;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.97 0.02 220;
+    --secondary-foreground: 0.25 0.015 250;
+    --muted: 0.93 0.025 220;
+    --muted-foreground: 0.5 0.02 250;
+    --accent: 0.72 0.155 55;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 1 0 0;
+    --border: 0.88 0.03 220;
+    --input: 0.88 0.03 220;
+    --ring: 0.67 0.115 214;
+    /* Custom edu tokens */
+    --edu-teal: 0.67 0.115 214;
+    --edu-orange: 0.72 0.155 55;
+    --edu-yellow: 0.825 0.157 87;
+    --edu-green: 0.63 0.155 149;
+    --edu-purple: 0.465 0.19 278;
+    --edu-blue: 0.575 0.12 213;
+    --chart-1: 0.67 0.115 214;
+    --chart-2: 0.72 0.155 55;
+    --chart-3: 0.63 0.155 149;
+    --chart-4: 0.465 0.19 278;
+    --chart-5: 0.825 0.157 87;
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.25 0.015 250;
+    --sidebar-primary: 0.67 0.115 214;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.97 0.02 220;
+    --sidebar-accent-foreground: 0.25 0.015 250;
+    --sidebar-border: 0.88 0.03 220;
+    --sidebar-ring: 0.67 0.115 214;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-nunito;
+  }
+}
+
+@layer utilities {
+  .gradient-cta {
+    background: linear-gradient(
+      135deg,
+      oklch(0.755 0.12 188),
+      oklch(0.685 0.185 40)
+    );
+  }
+  .gradient-hero {
+    background: linear-gradient(
+      135deg,
+      oklch(0.67 0.115 214),
+      oklch(0.575 0.12 213)
+    );
+  }
+  .timer-green {
+    color: oklch(0.63 0.155 149);
+  }
+  .timer-yellow {
+    color: oklch(0.825 0.157 87);
+  }
+  .timer-red {
+    color: oklch(0.577 0.245 27.325);
+  }
+  .timer-bar-green {
+    background: oklch(0.63 0.155 149);
+  }
+  .timer-bar-yellow {
+    background: oklch(0.825 0.157 87);
+  }
+  .timer-bar-red {
+    background: oklch(0.577 0.245 27.325);
+  }
+}
